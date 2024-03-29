@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Iago Bacci</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a17481eea5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- OPEN HEADER -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu" class="ul_menu">
+                    <li><a href="#header" class="home">Home</a></li>
+                    <li><a href="#about" class="about">About</a></li>
+                    <li><a href="#knowledge" class="knowledge">Knowledge</a></li>
+                    <li><a href="#portifolio" class="portifolio">Portifolio</a></li>
+                    <li><a href="#contact" class="contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="language">
+                <div class="language_selected">
+                    EN-US
+                </div >
+                <ul class="languageSection">
+                    <li><a href="#" language="portuguese" class="br lang" >Português</a></li>
+                    <li><a href="#" language="english" class="us lang active">Inglês</a></li>
+                </ul>
+            </div>
+            <div class="header_text">
+                <p class="header_p">Front End Developer /<br>Aspiring Game Creator</p> 
+                <h1 class="header_h1">Hi,<br>I'm <span>Iago Bacci</span>,<br>brazilian developer</h1>
+            </div>
+        </div>
+    </div>
+    <!-- END HEADER -->
+    <!-- ABOUT SESSION -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_col_1">
+                    <img src="images/user.png" class="user">
+                </div>
+                <div class="about_col_2">
+                    <h1 class="sub_title sub_title_about">About Me</h1>
+                    <p class="about_col_text">Passionate about technology and programming, I'm a university student deeply engaged in exploring various programming languages and methodologies. I thrive in collaborative environments and enjoy tackling coding challenges. I believe in the transformative power of technology and am committed to using my programming skills to contribute to meaningful projects.<br>With a solid foundation in programming principles, I'm excited to embark on new challenges and make an impact in the tech industry. Additionally, I have a keen interest in game development, where I can apply my technical knowledge creatively. Immersed in the game design process, I find endless inspiration to refine my skills.</p>
+
+                    <div class="tab_titles">
+                        <div class="tab_links skiLink active_link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab_links expLink" onclick="opentab('experience')">Experience</div>
+                        <div class="tab_links eduLink" onclick="opentab('education')">Education</div>
+                    </div>
+                    <div class="tab_contents skiCont active_tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing intuitive and visually appealing user interfaces.</li>
+                            <li><span>HTML/CSS</span><br>Web development for structuring and styling content.</li>
+                            <li><span>JavaScript Programming</span><br>Frontend scripting language for dynamic web interactions.</li>
+                            <li><span>Game Development</span><br>Game creation using C# programming language.</li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents expCont" id="experience">
+                        <ul>
+                            <li><span>No Work Experience Yet</span><br>Unfortunately, I don't have any real professional experience in the programming field yet,<br> only the projects listed in the 'portfolio' tab.<br>If you would like to see work experiences unrelated to the programming field, they are listed on the resume at the bottom, under the 'contact' section.</li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents eduCont" id="education">
+                        <ul>
+                            <li><span>Analysis and Systems Development</span><br>University of the Federal Institute of São Paulo - 2023/2026</li>
+                            <li><span>HTML/CSS Course</span><br>HTML and CSS course (module 1 and 2) by Curso em Video - 2024</li>
+                            <li><span>Start Game Dev</span><br>Unity game creation course by Crie Seus Jogos - 2024</li>
+                            <li><span>Unreal Engine 4 Class: Blueprints</span><br>Unreal Engine 4 Course by Lucas Schmigel - Udemy 2024</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END ABOUT -->
+    <!-- KNOWLEDGE SESSION -->
+    <div id="knowledge">
+        <div class="container">
+            <h1 class="sub_title sub_title_know">My Knowledge</h1>
+            <div class="knowledge_list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2 class="webH1">Web Development</h2>
+                    <p class="webP">Web design involves the creation and maintenance of visually appealing and user-friendly websites. It encompasses various aspects such as layout design, color schemes, typography, and overall user experience. A web designer's goal is to craft websites that are not only aesthetically pleasing but also intuitive and easy to navigate for users.</p>
+                    <a href="https://www.w3schools.com/whatis/" target="_blank">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2 class="gameH1">Game Creation</h2>
+                    <p class="gameP">Game creation involves the development of interactive experiences for entertainment or educational purposes. It encompasses a wide range of skills including game design, programming, art, sound design, and storytelling. Game creators strive to engage players through compelling gameplay mechanics, immersive worlds, and captivating narratives.</p>
+                    <a href="https://unity.com/how-to/beginner-video-game-resources" target="_blank">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2 class="uiuxH1">UI/UX Desing</h2>
+                    <p class="uiuxP">UI (User Interface) and UX (User Experience) design focus on creating seamless and intuitive interactions between users and digital products, such as websites, applications, and games. UI design involves the visual elements and layout of a product, while UX design focuses on the overall experience and usability. Both disciplines aim to optimize user satisfaction by considering factors such as accessibility, ease of use, and emotional engagement.</p>
+                    <a href="https://www.codecademy.com/learn/intro-to-ui-ux" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END KNOWLEDGE-->
+    <!-- PORTIFOLIO SESSION -->
+    <div id="portifolio">
+        <div class="container">
+            <h1 class="sub_title sub_title_work">My Work</h1>
+            <div class="work_list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3 class="project1title">Pokemon Inspirated Game - JS</h3>
+                        <p class="project1cont">This game was based on a video on YouTube, being the first real contact I had with JavaScript outside of college classes. It was a very interesting project to work on, where I was able to acquire a lot of knowledge, especially related to object-oriented programming.</p>
+                        <a href="https://iagobacci.github.io/PokemonInspiratedGame/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3 class="project2title">Research Group Website</h3>
+                        <p class="project2cont">A web project created for a group studying the use of mass spectrometry-based metabolomics to understand biological systems. My first experience with website creation, developed for a college assignment in the web development course.</p>
+                        <a href="https://iagobacci.github.io/MS4life-lab-Project/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3 class="project3title"></h3>
+                        <p class="project3cont">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet eos qui id est fuga, maiores quod at, quidem tempore incidunt, animi eum dolor voluptates nobis. Veniam odit maxime itaque obcaecati!</p>
+                        <a href="#" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#"class="btn seeMore" target="_blank">See more</a>
+            </h1>
+        </div>
+    </div>
+    <!-- END PORTIFOLIO -->
+    <!-- CONTACT SESSION -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact_left">
+                    <h1 class="sub_title sub_title_contact">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>bacci.iago@hotmail.com</p>
+                    <p><i class="fa-solid fa-square-phone-flip"></i>+55 11 95781-4462</p>
+                    <div class="social_icons">
+                        <a href="https://github.com/IagoBacci" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/iago-felipe-steigleder-bacci-6a03271a1/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:bacci.iago@hotmail.com"><i class="fa-solid fa-envelope"></i></i></a>
+                    </div>
+                    <a href="images/Curriculo-Iago.pdf" download class="btn btn2">Download CV BR</a>
+                    <a href="images/Curriculum Iago (EN).pdf" download class="btn btn2">Download CV EN</a>
+                </div>
+                <div class="contact_right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email required">
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END CONTACT -->
+    <!-- SCRIPTS -->
+    <script src="scripts/translate.js"></script>
+    <script src="scripts/aboutScript.js"></script>
+    <script src="scripts/menu.js"></script>
+</body>
+</html>

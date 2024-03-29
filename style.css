@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root{
+    --primaryColor: rgb(200, 0, 0);
+    --secondaryColor: rgb(255, 255, 255);
+}
+
+/*      CHANGES ALL      */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*      BODY CSS      */
+body{
+    background: black;
+    height: 100vh;
+    color: #fff;
+}
+/*      HEADER CHANGES      */
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    margin: 0;
+    width: 200px;
+}
+/*      MENUS      */
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+/*      ADDING IMAGE BOTTON MENU CHOISE      */
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: var(--primaryColor);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/*      HEADER TEXT EDIT      */
+.header_text{
+    margin-top: 20%;
+    font-size: 30px;
+    color: var(--secondaryColor);
+    text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;  
+}
+.header_text h1{
+    margin-top: 20px;
+    font-size: 60px;
+}
+.header_text p{
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.header_text h1 span{
+    margin-top: 20px;
+    font-size: 80px;
+    color: var(--primaryColor);
+}
+/*      LANGUAGE      */
+
+.language{
+    position: relative;
+    width: 120px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+.language_selected{
+    display: flex;
+    align-items: center;
+    color: var(--secondaryColor);
+    cursor: pointer;
+}
+
+
+.language ul{
+    position: absolute;
+    width: 140px;
+    background-color: var(--secondaryColor);
+    border: 2px solid var(--primaryColor);
+    padding-top: 10px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.7);
+    display: none;
+}
+
+.language ul li{
+    list-style: none;
+}
+
+.language ul li a{
+    display: block;
+    color: var(--primaryColor);
+    padding-top: 5px 10px;
+}
+
+.language ul li:hover{
+    background-color: #f8f8f8;
+}
+
+.language ul li a:before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+a.br::before{
+    background-image: url("https://flagsapi.com/BR/shiny/64.png");
+}
+a.us::before{
+    background-image: url("https://flagsapi.com/US/shiny/64.png");
+}
+.language:hover ul{
+    display: block;
+}
+/*      ABOUT ME      */
+#about{
+    padding: 80px 0;
+    color: #ababab
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about_col_1{
+    flex-basis:35%
+}
+.about_col_1 img{
+    width: 100%;
+    border-radius: 10%;
+}
+.about_col_2{
+    flex-basis: 60%;
+}
+.sub_title{
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--secondaryColor);
+}
+
+.tab_titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab_links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab_links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--primaryColor);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab_links.active_link::after{
+    width: 100%;
+}
+.tab_contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab_contents ul li span{
+    color: var(--primaryColor);
+    font-size: 14px;
+}
+.tab_contents{
+    display: none;
+}
+.tab_contents.active_tab{
+    display: block;
+}
+
+/*      KNOWLEDGE      */
+#knowledge{
+    padding: 30px 0;
+}
+.knowledge_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.knowledge_list div h2{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+.knowledge_list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 20px;
+    text-align: center;
+    transition: background 0.5s, transform 0.5s;
+}
+.knowledge_list div a{
+    text-decoration: none;
+    color: var(--secondaryColor);
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+
+}
+.knowledge_list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    
+}
+.knowledge_list div:hover{
+    background: var(--primaryColor);
+    transform: translateY(-10px)
+}
+
+/*      PORTIFOLIO      */
+#portifolio{
+    padding: 50px 0px;
+}
+.work_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), var(--primaryColor));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 1s;
+}
+.layer h3{
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 30px;
+    color: var(--primaryColor);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: var(--secondaryColor);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.2);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid var(--primaryColor);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--secondaryColor);
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: var(--primaryColor);
+}
+/*      CONTACT      */
+.contact_left{
+    flex-basis: 35%;
+}
+.contact_right{
+    flex-basis: 60%;
+}
+.contact_left p{
+    margin-top: 30px;
+}
+.contact_left p i{
+    color: var(--primaryColor);
+    margin-right: 10px;
+    font-size: 20px;
+}
+.social_icons{
+    margin-top: 30px;
+}
+.social_icons a{
+    color: var(--secondaryColor);
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 30px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social_icons a:hover{
+    color: var(--primaryColor);
+    transform: translateY(-8px);
+
+}
+.btn.btn2{
+    display: inline-block;
+    background-color: var(--primaryColor);
+}
+.contact_right{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: var(--secondaryColor);
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/*------ CSS for PHONE ------*/
+nav .fas{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .header_text p{
+        margin-top: 50%;
+        font-size: 24px;
+    }
+    .header_text h1{
+        font-size: 36px;
+    }
+    .header_text h1 span{
+        font-size: 48px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: var(--primaryColor);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        transition: right 0.5s;
+        z-index:2;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub_title{
+        font-size: 48px;
+    }
+    .about_col_1, .about_col_2{
+        flex-basis: 100%;
+    }
+    .about_col_1{
+        margin-bottom: 30px;
+    }
+    .about_col_2{
+        font-size: 14px;
+    }
+    .tab_links{
+        margin-right: 20px;
+        font-size: 16px;
+    }
+    .contact_left, .contact_right{
+        flex-basis: 100%;
+    }
+}
