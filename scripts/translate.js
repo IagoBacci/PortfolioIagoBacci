@@ -2,7 +2,7 @@ const langSec = document.querySelector('.languageSection');
 const home = document.querySelector('.home');
 const about = document.querySelector('.about');
 const knowledge = document.querySelector('.knowledge');
-const portifolio = document.querySelector('.portifolio');
+const portfolio = document.querySelector('.portfolio');
 const contact = document.querySelector('.contact');
 const buttons = document.querySelectorAll('.lang');
 const langSelec = document.querySelector('.language_selected');
@@ -44,7 +44,7 @@ buttons.forEach(button => {
         headerh1.innerHTML = data[attr].header_h1;
         subAbout.innerHTML = data[attr].sub_title_about;
         home.innerHTML = data[attr].home;
-        portifolio.innerHTML = data[attr].portifolio;
+        portfolio.innerHTML = data[attr].portfolio;
         contact.innerHTML = data[attr].contact;
         knowledge.innerHTML = data[attr].knowledge;
         about.innerHTML = data[attr].about;
@@ -83,7 +83,7 @@ const data = {
         "about": "About",
         "knowledge": "Knowledge",
         "contact": "Contact",
-        "portifolio": "Portifolio",
+        "portfolio": "Portfolio",
         "about_col_text": "Passionate about technology and programming, I'm a university student deeply engaged in exploring various programming languages and methodologies. I thrive in collaborative environments and enjoy tackling coding challenges. I believe in the transformative power of technology and am committed to using my programming skills to contribute to meaningful projects.<br>With a solid foundation in programming principles, I'm excited to embark on new challenges and make an impact in the tech industry. Additionally, I have a keen interest in game development, where I can apply my technical knowledge creatively. Immersed in the game design process, I find endless inspiration to refine my skills.",
         "skiLink": "Skills",
         "expLink": "Experience",
@@ -113,7 +113,7 @@ const data = {
         "about": "Sobre",
         "knowledge": "Conhecimento",
         "contact": "Contato",
-        "portifolio": "Portifólio",
+        "portfolio": "Portfólio",
         "header_p": "Desenvolvedor Front End /<br>Aspirante a Criador de Jogos",
         "language_selected": "PT-BR",
         "header_h1": "Olá,<br>Eu sou <span>Iago Bacci</span>,<br>desenvolvedor brasileiro",
@@ -123,7 +123,7 @@ const data = {
         "expLink": "Experiência",
         "eduLink": "Escolaridade",
         "skiCont": "<ul><li><span>UI/UX</span><br>Design de interfaces de usuário intuitivas e visualmente atraentes.</li><li><span>HTML/CSS</span><br>Desenvolvimento web para estruturar e estilizar conteúdo.</li><li><span>JavaScript</span><br>Linguagem de script para interações dinâmicas no frontend</li><li><span>Game Development</span><br>Criação de jogos utilizando a linguagem de programação C#</li></ul>",
-        "expCont": "<ul><li><span>Sem Experiência de Trabalho Ainda</span><br>Infelizmente ainda não tenho nenhuma experiência profissional real na área da programação, apenas os projetos listados na aba de 'portifolio'.<br>Se quiser ver expêriencias de trabalho não relatadas a área de programação, estão listadas no currículo ao final, na parte de 'contato'.</li></ul>",
+        "expCont": "<ul><li><span>Sem Experiência de Trabalho Ainda</span><br>Infelizmente ainda não tenho nenhuma experiência profissional real na área da programação, apenas os projetos listados na aba de 'portfolio'.<br>Se quiser ver expêriencias de trabalho não relatadas a área de programação, estão listadas no currículo ao final, na parte de 'contato'.</li></ul>",
         "eduCont": "<ul><li><span>Análise e Desenvolvimento de Sistemas</span><br>Instituto Federal de São Paulo - 2023/2026</li><li><span>Curso de HTML/CSS</span><br>Curso de HTML e CSS (módulo 1 e 2) pelo Curso em Vídeo - 2024</li><li><span><br>Início em Desenvolvimento de Jogos</span>Curso de criação de jogos Unity pelo Crie Seus Jogos - 2024</li><li><span>Aula de Unreal Engine 4: Blueprints</span><br>Curso de Unreal Engine 4 pelo Lucas Schmigel - Udemy 2024</li></ul>",
         "webH1": "Desenvolvimento Web",
         "gameH1": "Criação de Jogos",
