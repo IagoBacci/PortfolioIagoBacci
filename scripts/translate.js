@@ -100,12 +100,11 @@ const data = {
         "sub_title_know": "My Knowledge",
         "project1title": "Pokemon Inspirated Game - JavaScript",
         "project2title": "MS4Life Website Project",
-        "project3title": "",
+        "project3title": "HTML/CSS Android Challenge",
         "project1cont": "This game was based on a video on YouTube, being the first real contact I had with JavaScript outside of college classes. It was a very interesting project to work on, where I was able to acquire a lot of knowledge, especially related to object-oriented programming.",
         "project2cont": "A web project created for a group studying the use of mass spectrometry-based metabolomics to understand biological systems. My first experience with website creation, developed for a college assignment in the web development course.",
-        "project3cont": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet eos qui id est fuga, maiores quod at, quidem tempore incidunt, animi eum dolor voluptates nobis. Veniam odit maxime itaque obcaecati!",
-        "sub_title_contact": "Contact Me"
-        
+        "project3cont": "The website created as part of the HTML/CSS course challenge by CursoEmVídeo stands out primarily for its dynamic menus, responsiveness, and seamless image swapping during adaptation. The menus have been carefully designed to offer intuitive and efficient navigation, while responsiveness ensures a consistent user experience across various devices. Additionally, the image swapping during responsiveness contributes to visually appealing presentation tailored to different screens, providing an enhanced user experience.",
+        "sub_title_contact": "Contact Me",        
     },
     "portuguese":
     {
@@ -134,10 +133,10 @@ const data = {
         "sub_title_know": "Meus Conhecimentos",
         "project1title": "Jogo Inspirado em Pokemon - JavaScript",
         "project2title": "Projeto do Site 'MS4Life'",
-        "project3title": "",
+        "project3title": "Desafio HTML/CSS Android",
         "project1cont": "Esse jogo foi feito com base num vídeo no Youtube, sendo o primeiro contato verdadeiro que tive com JavaScript fora das aulas da faculdade. Foi um projeto bastante interessante de estar fazendo, onde pude adquirir muito conhecimento, principalmente relacionado a programação orientada a objetos.",
         "project2cont": "Um projeto web criado para um grupo que estuda o uso da metabolômica baseada em espectometría de massa para compreender sistemas biológicos. O primeiro contato que tive com criação de sites, feito para um trabalho da faculdade da matéria de desenvolvimento web.",
-        "project3cont": "BR Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet eos qui id est fuga, maiores quod at, quidem tempore incidunt, animi eum dolor voluptates nobis. Veniam odit maxime itaque obcaecati!",
+        "project3cont": "O site desenvolvido como parte do desafio do curso HTML/CSS do CursoEmVídeo se destaca principalmente pelos seus menus dinâmicos, sua capacidade de adaptação a diferentes dispositivos (responsividade) e a troca de imagens que ocorre de forma fluida durante essa adaptação. Os menus foram cuidadosamente projetados para oferecer uma navegação intuitiva e eficiente, enquanto a responsividade garante uma experiência consistente ao usuário, independentemente do dispositivo que esteja utilizando para acessar o site. Além disso, a troca de imagens durante a responsividade contribui para uma apresentação visualmente atraente e adaptada às diferentes telas, proporcionando uma experiência de usuário aprimorada.",
         "sub_title_contact": "Contate-me"
     }
 }
